@@ -1,0 +1,12 @@
+.card {
+    --card-padding: calc(var(--space) * 5);
+    --card-border: 1px solid #d5d5d6;
+    --card-border-radius: 0;
+    --card-background: #c0c0c0;
+
+    position: relative;
+    padding: var(--card-padding);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    background-color: var(--card-background);
+}
