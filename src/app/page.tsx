@@ -11,7 +11,7 @@ export default function Home() {
     return (
       <main className={styles.main}>
           <div className={styles.window}>
-              <Header title="Login to Evil Martians team" icon="/assets/win95-logo.png" />
+              <Header title="Login to Evil Martians team" icon="assets/win95-logo.png" />
 
               <Card>
                   <CardTitle title="Welcome to not existing website" />

@@ -126,7 +126,7 @@ export default function Login() {
                             Logging in...
                         </span>
 
-                        <img className={styles.loadingIcon} src="/assets/loading.gif" alt="Loading" />
+                        <img className={styles.loadingIcon} src="assets/loading.gif" alt="Loading" />
                     </span>
                 ) : 'Log In'}
             </Button>
