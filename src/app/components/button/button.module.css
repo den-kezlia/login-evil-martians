@@ -1,0 +1,72 @@
+.button {
+    --button-border: 2px solid;
+    --button-outline-offset: -8px;
+
+    --button-border-top-color: #fefefe;
+    --button-border-right-color: #393838;
+    --button-border-bottom-color: #393838;
+    --button-border-left-color: #fefefe;
+
+    --button-border-top-color--active: #393838;
+    --button-border-right-color--active: #fefefe;
+    --button-border-bottom-color--active: #fefefe;
+    --button-border-left-color--active: #393838;
+    --button-box-shadow--active: inset 2px 2px 0px 0px #848584;
+
+    --button-background-color--disabled: #c0c0c0;
+    --button-border-top-color--disabled: #fefefe;
+    --button-border-right-color--disabled: #393838;
+    --button-border-bottom-color--disabled: #393838;
+    --button-border-left-color--disabled: #fefefe;
+    --button-box-shadow--disabled: inset -2px -2px 0px 0px #848584;
+
+    --button-background-color: #c0c0c0;
+    --button-background-color--hover: #c0c0c0;
+
+    --button-box-shadow: inset -2px -2px 0px 0px #848584;
+    --button-color: #000;
+    --button-padding: calc(var(--space) * 2) calc(var(--space) * 2);
+    --button-height: calc(var(--space) * 12);
+    --button-border-radius: 0;
+    --button-font-size: 1.125rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline-offset: --button-outline-offset;
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    height: var(--button-height);
+    background-color: var(--button-background-color);
+    box-shadow: var(--button-box-shadow);
+    border: var(--button-border);
+    border-left-color: var(--button-border-left-color);
+    border-top-color: var(--button-border-top-color);
+    border-right-color: var(--button-border-right-color);
+    border-bottom-color: var(--button-border-bottom-color);
+    border-radius: var(--button-border-radius);
+}
+
+.button:hover {
+    --button-background-color: var(--button-background-color--hover);
+}
+
+.button:active {
+    --button-border-top-color: var(--button-border-top-color--active);
+    --button-border-right-color: var(--button-border-right-color--active);
+    --button-border-bottom-color: var(--button-border-bottom-color--active);
+    --button-border-left-color: var(--button-border-left-color--active);
+    --button-box-shadow: var(--button-box-shadow-active);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    --button-background-color: var(--button-background-color--disabled);
+    --button-border-left-color: var(--button-border-left-color--disabled);
+    --button-border-top-color: var(--button-border-top-color--disabled);
+    --button-border-right-color: var(--button-border-right-color--disabled);
+    --button-border-bottom-color: var(--button-border-bottom-color--disabled);
+    --button-box-shadow: var(--button-box-shadow--disabled);
+}

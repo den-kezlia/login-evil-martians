@@ -1,0 +1,45 @@
+.inputContainer {
+  --input-border-color: #000;
+  --input-container-border: 2px solid;
+  --input-container-border-left-color: #848584;
+  --input-container-border-top-color: #848584;
+  --input-container-border-right-color: #fefefe;
+  --input-container-border-bottom-color: #fefefe;
+
+  flex: 1;
+  border: var(--input-container-border);
+  border-left-color: var(--input-container-border-left-color);
+  border-top-color: var(--input-container-border-top-color);
+  border-right-color: var(--input-container-border-right-color);
+  border-bottom-color: var(--input-container-border-bottom-color);
+}
+
+.inputContainer:has(.input:focus-within) {
+  outline: 2px dotted var(--input-border-color);
+}
+
+.input {
+  --input-color: #000;
+  --input-border: 2px solid;
+  --input-border-left-color: #101010;
+  --input-border-top-color: #101010;
+  --input-border-right-color: #dfdfdf;
+  --input-border-bottom-color: #dfdfdf;
+  --input-background-color: #fff;
+  --input-border-radius: 0;
+  --input-font-size: 1.125rem;
+  --input-padding: calc(var(--space) * 1) calc(var(--space) * 1);
+
+  width: 100%;
+  padding: var(--input-padding);
+  font-size: var(--input-font-size);
+  color: var(--input-color);
+  background-color: var(--input-background-color);
+  border: var(--input-border);
+  border-left-color: var(--input-border-left-color);
+  border-top-color: var(--input-border-top-color);
+  border-right-color: var(--input-border-right-color);
+  border-bottom-color: var(--input-border-bottom-color);
+  border-radius: var(--input-border-radius);
+  transition: box-shadow var(--animation-duration) var(--animation-easing);
+}

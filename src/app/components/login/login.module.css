@@ -1,0 +1,29 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(var(--space) * 6);
+    gap: calc(var(--space) * 4);
+}
+
+.error {
+    color: red;
+}
+
+.passwordInput {
+    padding-right: calc(var(--space) * 10);
+}
+
+.submitButton {
+    margin-top: calc(var(--space) * 4);
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space) * 2);
+}
+
+.loadingIcon {
+    width: calc(var(--size) * 6);
+    height: calc(var(--size) * 6);
+}
